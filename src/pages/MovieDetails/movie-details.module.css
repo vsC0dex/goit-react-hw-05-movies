@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  padding: 20px;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.secondaryContainer {
+  display: flex;
+  padding: 20px;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.description {
+  max-width: 1200px;
+}
+
+.button {
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  outline: 1px solid black;
+  cursor: pointer;
+  padding: 7px;
+  color: black;
+  background-color: white;
+  transition: color 250ms linear, background-color 250ms linear,
+    outline 250ms linear;
+}
+
+.button:focus,
+.button:hover {
+  outline: 1px solid transparent;
+  color: white;
+  background-color: red;
+  transition: color 250ms linear, background-color 250ms linear,
+    outline 250ms linear;
+}
