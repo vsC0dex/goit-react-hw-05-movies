@@ -14,7 +14,6 @@ const Reviewers = lazy(() => import('./Rewiewers/Reviewers'));
 export const App = () => {
   return (
     <BrowserRouter>
-      <Navbar />
       <Suspense
         fallback={
           <Triangle
@@ -26,6 +25,7 @@ export const App = () => {
           />
         }
       >
+        <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/movies" element={<MoviesPage />} />
