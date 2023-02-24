@@ -13,7 +13,7 @@ const Reviewers = lazy(() => import('./Rewiewers/Reviewers'));
 
 export const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/goit-react-hw-05-movies">
       <Suspense
         fallback={
           <Triangle
